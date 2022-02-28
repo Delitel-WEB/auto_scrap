@@ -13,7 +13,7 @@ keyboard.add_hotkey("alt+z", lambda: hotkey_run())
 
 def mus(): # ЗВУКОВОЙ ЭФФЕКТ
 	CHUNK = 1024
-	wf = wave.open("mus/bing.wav", 'rb')
+	wf = wave.open("bing.wav", 'rb')
 	p = pyaudio.PyAudio()
 	stream = p.open(format=p.get_format_from_width(wf.getsampwidth()),
                 channels=wf.getnchannels(),
